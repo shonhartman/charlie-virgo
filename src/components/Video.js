@@ -6,7 +6,7 @@ export default function Video() {
   return (
     <mesh scale={size}>
       <planeGeometry />
-      <Suspense fallback={<FallbackMaterial url="vercel.svg" />}>
+      <Suspense fallback={<FallbackMaterial url="logo192.png" />}>
         <VideoMaterial url="PunkRockSinatra.mp4" />
       </Suspense>
     </mesh>
