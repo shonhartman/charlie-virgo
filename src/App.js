@@ -49,15 +49,15 @@ function App() {
           </mesh>
         </group>
         {/* SPOTIFY */}
-        <mesh onClick={() => window.location.href = "https://open.spotify.com/playlist/32EODbloE7xbHbGZs5mdbG?si=2af870906e4f42b0"} castShadow position={[-0.95,-0.7, 0.25]} rotation={[1.5,5,0]}>
+        <mesh onClick={() => window.open("https://open.spotify.com/playlist/32EODbloE7xbHbGZs5mdbG?si=2af870906e4f42b0", "_blank")} castShadow position={[-0.95,-0.7, 0.25]} rotation={[1.5,5,0]}>
           <primitive object={spotify.scene} scale={0.25} />
         </mesh>
         {/* APPLE MUSIC */}
-        <mesh onClick={() => window.location.href = "https://music.apple.com/us/playlist/charlie-virgo/pl.u-V9D7mXGUB0NYDa"} castShadow position={[0,-0.7, 0.25]} rotation={[0,0,0]}>
+        <mesh onClick={() => window.open("https://music.apple.com/us/playlist/charlie-virgo/pl.u-V9D7mXGUB0NYDa", "_blank")} castShadow position={[0,-0.7, 0.25]} rotation={[0,0,0]}>
           <primitive object={apple.scene} scale={0.25} />
         </mesh>
         {/* INSTAGRAM */}
-        <mesh onClick={() => window.location.href = "https://www.instagram.com/charlie_virgo"} castShadow position={[0.95,-0.7, 0.25]} rotation={[0,-1.5,0]}>
+        <mesh onClick={() => window.open("https://www.instagram.com/charlie_virgo", "_blank")} castShadow position={[0.95,-0.7, 0.25]} rotation={[0,-1.5,0]}>
           <primitive object={instagram.scene} scale={0.25} />
         </mesh>
       {/* Postprocessing */}
