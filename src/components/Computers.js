@@ -140,7 +140,7 @@ export default function Computers(props) {
       <instances.Object36 position={[0.35, 2.35, -3.34]} rotation={[-0.26, 0, 0]} /> 
       <instances.Object36 position={[0.18, 2.8, -2.85]} rotation={[0.09, 0.15, -0.005]} /> 
       <instances.Object36 position={[1.89, 0, -1.94]} rotation={[0, -0.44, 0]} scale={[1.5, 1, 1.5]} /> 
-      <instances.Object36 position={[1.86, 1.61, -1.81]} rotation={[0, -Math.PI / 3, 0]} /> 
+      {/* <instances.Object36 position={[1.86, 1.61, -1.81]} rotation={[0, -Math.PI / 3, 0]} />  */}
       <instances.Object36 position={[-1.1, 4.29, -4.43]} rotation={[0, 0.36, 0]} /> 
       <instances.Object36 position={[-5.25, 4.29, -1.47]} rotation={[0, 1.25, 0]} /> 
       <mesh castShadow receiveShadow geometry={n.Object_204.geometry} material={m.Texture} position={[3.2, 4.29, -3.09]} rotation={[-Math.PI, 0.56, 0]} scale={-1} /> 
@@ -149,7 +149,7 @@ export default function Computers(props) {
       <ScreenText frame="Object_209" panel="Object_210" y={5} position={[-1.43, 2.5, -1.8]} rotation={[0, 1, 0]} /> 
       {/* RIGHT IN FRONT OF SPOTIFY */}
       {/* <ScreenText invert frame="Object_212" panel="Object_213" x={-5} y={5} position={[-2.73, 0.63, -0.52]} rotation={[0, 1.09, 0]} />  */}
-      <ScreenText invert frame="Object_215" panel="Object_216" position={[1.84, 0.38, -1.77]} rotation={[0, -Math.PI / 9, 0]} /> 
+      {/* <ScreenText invert frame="Object_215" panel="Object_216" position={[1.84, 0.38, -1.77]} rotation={[0, -Math.PI / 9, 0]} />  */}
       <ScreenText invert frame="Object_218" panel="Object_219" x={-5} position={[3.11, 2.15, -0.18]} rotation={[0, -0.79, 0]} scale={0.81} /> 
       <ScreenText frame="Object_221" panel="Object_222" y={5} position={[-3.42, 3.06, 1.3]} rotation={[0, 1.22, 0]} scale={0.9} /> 
       <ScreenText invert frame="Object_224" panel="Object_225" position={[-3.9, 4.29, -2.64]} rotation={[0, 0.54, 0]} /> 
