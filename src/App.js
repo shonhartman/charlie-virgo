@@ -1,6 +1,6 @@
 import './App.css';
 import { Canvas, useFrame } from '@react-three/fiber'
-import { MeshReflectorMaterial, BakeShadows } from '@react-three/drei'
+import { MeshReflectorMaterial, BakeShadows, useGLTF } from '@react-three/drei'
 import { EffectComposer, Bloom, DepthOfField } from '@react-three/postprocessing'
 import { easing } from 'maath'
 import Computers, {Instances} from '../src/components/Computers'
@@ -13,6 +13,10 @@ function CameraRig() {
 }
 
 function App() {
+  const spotify = useGLTF('/spotify_logo.glb')
+  const apple = useGLTF('/apple_music_logo.glb') 
+  const instagram = useGLTF('/instagram_3d-icon.glb') 
+
   return (
     <div className="App">
       <Canvas style={{width: 'auto', height: '50vw'}} shadows dpr={[1, 1.5]} camera={{ position: [-1.5, 1, 5.5], fov: 45, near: 1, far: 20 }}>
@@ -44,6 +48,18 @@ function App() {
             />
           </mesh>
         </group>
+        {/* SPOTIFY */}
+        <mesh onClick={() => window.location.href = "https://open.spotify.com/playlist/32EODbloE7xbHbGZs5mdbG?si=2af870906e4f42b0"} castShadow position={[-1,-0.72,0.15]} rotation={[1.5,5,0]}>
+          <primitive object={spotify.scene} scale={0.25} />
+        </mesh>
+        {/* APPLE MUSIC */}
+        <mesh onClick={() => window.location.href = "https://music.apple.com/us/playlist/charlie-virgo/pl.u-V9D7mXGUB0NYDa"} castShadow position={[-0.25,-0.72,0.15]} rotation={[0,0,0]}>
+          <primitive object={apple.scene} scale={0.25} />
+        </mesh>
+        {/* INSTAGRAM */}
+        <mesh onClick={() => window.location.href = "https://open.spotify.com/playlist/32EODbloE7xbHbGZs5mdbG?si=2af870906e4f42b0"} castShadow position={[0.5,-0.72,0.15]} rotation={[0,-1.5,0]}>
+          <primitive object={instagram.scene} scale={0.25} />
+        </mesh>
       {/* Postprocessing */}
       <EffectComposer disableNormalPass>
         <Bloom luminanceThreshold={0} mipmapBlur luminanceSmoothing={0.0} intensity={4} />
